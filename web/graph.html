@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Railway Route Graph</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆 Railway Reservation System</h1>
+
+    <p>Railway Route Graph Analysis</p>
+
+</header>
+
+
+<div class="container">
+
+
+    <div class="section">
+
+        <h2>🗺️ Railway Route Analysis</h2>
+
+        <p>
+            Select the starting station and destination
+            to analyze the railway network.
+        </p>
+
+
+        <form method="get" action="graph">
+
+            <label>
+                <b>Starting Station:</b>
+            </label>
+
+            <br><br>
+
+            <select name="station" required>
+
+                <option value="Bhimavaram">
+                    Bhimavaram
+                </option>
+
+                <option value="Vijayawada">
+                    Vijayawada
+                </option>
+
+                <option value="Rajahmundry">
+                    Rajahmundry
+                </option>
+
+                <option value="Hyderabad">
+                    Hyderabad
+                </option>
+
+                <option value="Visakhapatnam">
+                    Visakhapatnam
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label>
+                <b>Destination Station:</b>
+            </label>
+
+            <br><br>
+
+            <select name="destination" required>
+
+                <option value="Visakhapatnam">
+                    Visakhapatnam
+                </option>
+
+                <option value="Vijayawada">
+                    Vijayawada
+                </option>
+
+                <option value="Rajahmundry">
+                    Rajahmundry
+                </option>
+
+                <option value="Hyderabad">
+                    Hyderabad
+                </option>
+
+                <option value="Bhimavaram">
+                    Bhimavaram
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <input type="submit"
+                   value="Find Route">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>🚉 Railway Network</h2>
+
+        <p>
+            Bhimavaram → Vijayawada
+        </p>
+
+        <p>
+            Vijayawada → Rajahmundry
+        </p>
+
+        <p>
+            Vijayawada → Hyderabad
+        </p>
+
+        <p>
+            Rajahmundry → Visakhapatnam
+        </p>
+
+        <p>
+            Hyderabad → Visakhapatnam
+        </p>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>📌 Example</h2>
+
+        <p>
+            Starting Station:
+            <b>Bhimavaram</b>
+        </p>
+
+        <p>
+            Destination:
+            <b>Visakhapatnam</b>
+        </p>
+
+        <p>
+            The system will display:
+        </p>
+
+        <ul>
+            <li>Shortest Route</li>
+
+            <li>Number of Stations</li>
+
+        </ul>
+
+    </div>
+
+
+    <a class="back-link" href="index.html">
+         Back to Home
+    </a>
+
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>

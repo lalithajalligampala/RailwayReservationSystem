@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Delete Train</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Railway Reservation System</h1>
+
+    <p>Admin - Delete Train</p>
+
+</header>
+
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>Delete Train</h2>
+
+        <p>
+            Enter the train number of the train
+            you want to delete.
+        </p>
+
+        <form action="deleteTrain" method="post">
+
+            <label>
+                <b>Train Number:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="trainNumber"
+                   placeholder="Example: 12890"
+                   required>
+
+            <br><br>
+
+            <input type="submit"
+                   value="Delete Train">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Delete Train Information</h2>
+
+        <div class="algorithm">
+
+            <strong>Step 1:</strong>
+
+            Enter the train number that has to
+            be deleted.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 2:</strong>
+
+            The system searches for the train
+            using its train number.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 3:</strong>
+
+            The selected train record is removed
+            from the database.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Admin Function:</strong>
+
+            Train deletion and database management.
+
+        </div>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Warning</h2>
+
+        <p>
+            Make sure you enter the correct train
+            number before deleting.
+        </p>
+
+        <p>
+            A train with related booking records
+            may not be removable because of
+            database relationships.
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="admin.html">
+        Back to Admin Panel
+    </a>
+
+    <br><br>
+
+    <a class="back-link" href="index.html">
+        Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    ADSA Course Based Project
+
+</footer>
+
+</body>
+
+</html>

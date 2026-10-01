@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Cancel Ticket</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆Railway Reservation System</h1>
+
+    <p>Ticket Cancellation</p>
+
+</header>
+
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>Cancel Ticket</h2>
+
+        <p>
+            Enter your PNR number to cancel the
+            corresponding railway ticket.
+        </p>
+
+        <form action="cancelTicket" method="post">
+
+            <label>
+                <b>PNR Number:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="pnr"
+                   placeholder="Enter your PNR number"
+                   required>
+
+            <br><br>
+
+            <input type="submit"
+                   value="Cancel Ticket">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Cancellation Process</h2>
+
+        <div class="algorithm">
+
+            <strong>Step 1:</strong>
+
+            The system searches for the booking
+            using the PNR number.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 2:</strong>
+
+            The booking status is changed to
+            CANCELLED.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 3:</strong>
+
+            If a waiting-list passenger exists,
+            the first passenger in the queue can
+            be promoted to CONFIRMED.
+
+        </div>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Important</h2>
+
+        <p>
+            Please enter the correct PNR number.
+        </p>
+
+        <p>
+            A cancelled ticket cannot be used for
+            travel.
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="index.html">
+        Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>

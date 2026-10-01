@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Update Train</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Railway Reservation System</h1>
+
+    <p>Admin - Update Train</p>
+
+</header>
+
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>Update Train</h2>
+
+        <p>
+            Enter the train number and update the
+            train details.
+        </p>
+
+        <form action="updateTrain" method="post">
+
+            <label>
+                <b>Train Number:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="trainNumber"
+                   placeholder="Example: 12737"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Train Name:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="trainName"
+                   placeholder="Example: Gowthami Express"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Source:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="source"
+                   placeholder="Example: Bhimavaram"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Destination:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="destination"
+                   placeholder="Example: Vijayawada"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Departure Time:</b>
+            </label>
+
+            <br>
+
+            <input type="time"
+                   name="departureTime"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Arrival Time:</b>
+            </label>
+
+            <br>
+
+            <input type="time"
+                   name="arrivalTime"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Total Seats:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="totalSeats"
+                   placeholder="Example: 100"
+                   min="1"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Fare:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="fare"
+                   placeholder="Example: 180"
+                   min="0"
+                   step="0.01"
+                   required>
+
+            <br><br>
+
+
+            <input type="submit"
+                   value="Update Train">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Train Update Process</h2>
+
+        <div class="algorithm">
+
+            <strong>Step 1:</strong>
+
+            Enter the train number of the train
+            that needs to be updated.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 2:</strong>
+
+            Enter the new train information.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 3:</strong>
+
+            The system searches for the train
+            in the MySQL database.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 4:</strong>
+
+            The selected train record is updated
+            with the new information.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Admin Function:</strong>
+
+            Train information management and
+            database update.
+
+        </div>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Important</h2>
+
+        <p>
+            Enter the correct train number before
+            updating the train.
+        </p>
+
+        <p>
+            Updating the train details may also
+            reset the available seat count according
+            to the current admin implementation.
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="admin.html">
+        Back to Admin Panel
+    </a>
+
+    <br><br>
+
+    <a class="back-link" href="index.html">
+        Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    ADSA Course Based Project
+
+</footer>
+
+</body>
+
+</html>

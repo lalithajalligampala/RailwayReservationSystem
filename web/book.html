@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Book Ticket</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆 Railway Reservation System</h1>
+
+    <p>Ticket Booking</p>
+
+</header>
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>🎫 Book Your Ticket</h2>
+
+        <form action="bookTicket" method="post">
+
+            <label>
+                <b>Passenger Name:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="passengerName"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Age:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="age"
+                   min="1"
+                   max="120"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Gender:</b>
+            </label>
+
+            <br>
+
+            <select name="gender" required>
+
+                <option value="">
+                    Select Gender
+                </option>
+
+                <option value="Male">
+                    Male
+                </option>
+
+                <option value="Female">
+                    Female
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <label>
+                <b>Phone Number:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="phone"
+                   maxlength="15"
+                   required>
+
+            <br><br>
+
+
+            <label>
+    <b>Train Number:</b>
+</label>
+
+<br>
+
+<input type="number"
+       name="trainNumber"
+       min="1"
+       placeholder="Example: 12737"
+       required>
+
+            <br><br>
+
+
+            <label>
+                <b>Journey Date:</b>
+            </label>
+
+            <br>
+
+            <input type="date"
+                   name="journeyDate"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Travel Class:</b>
+            </label>
+
+            <br>
+
+            <select name="travelClass" required>
+
+                <option value="">
+                    Select Class
+                </option>
+
+                <option value="Sleeper">
+                    Sleeper
+                </option>
+
+                <option value="3A">
+                    3A
+                </option>
+
+                <option value="2A">
+                    2A
+                </option>
+
+                <option value="1A">
+                    1A
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <input type="submit"
+                   value="Book Ticket">
+
+        </form>
+
+    </div>
+
+
+
+    <div class="section">
+
+        <h2>📌 Booking Process</h2>
+
+        <p>
+            1. Enter passenger details
+        </p>
+
+        <p>
+            2. Select train and journey date
+        </p>
+
+        <p>
+            3. Select travel class
+        </p>
+
+        <p>
+            4. System checks seat availability
+        </p>
+
+        <p>
+            5. SeatArray finds the first available seat
+        </p>
+
+        <p>
+            6. Fare is calculated
+        </p>
+
+        <p>
+            7. Unique PNR is generated
+        </p>
+
+        <p>
+            8. Booking is stored in the database
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>

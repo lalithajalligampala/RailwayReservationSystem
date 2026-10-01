@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>PNR Status</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆Railway Reservation System</h1>
+
+    <p>PNR Status Search</p>
+
+</header>
+
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>Check PNR Status</h2>
+
+        <p>
+            Enter your PNR number to view the
+            booking and passenger details.
+        </p>
+
+        <form action="pnr" method="get">
+
+            <label>
+                <b>PNR Number:</b>
+            </label>
+
+            <br>
+
+            <input type="number"
+                   name="pnr"
+                   placeholder="Enter your PNR number"
+                   required>
+
+            <br><br>
+
+            <input type="submit"
+                   value="Check PNR Status">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>PNR Search Process</h2>
+
+        <div class="algorithm">
+
+            <strong>Step 1:</strong>
+
+            Enter the PNR number of the booking.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 2:</strong>
+
+            The system searches for the PNR.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 3:</strong>
+
+            The corresponding booking ID is
+            retrieved.
+
+        </div>
+
+        <div class="algorithm">
+
+            <strong>Step 4:</strong>
+
+            The complete passenger and booking
+            details are displayed.
+
+        </div>
+
+    </div>
+
+
+
+    <a class="back-link" href="index.html">
+        Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>

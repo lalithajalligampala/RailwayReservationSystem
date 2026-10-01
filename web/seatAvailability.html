@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Seat Availability</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆 Railway Reservation System</h1>
+
+    <p>Seat Availability</p>
+
+</header>
+
+
+<div class="container">
+
+
+    <div class="section">
+
+        <h2>💺 Check Seat Availability</h2>
+
+        <form action="seatAvailability" method="get">
+
+            <label>
+                <b>Train Number:</b>
+            </label>
+
+            <br><br>
+
+            <input type="number"
+                   name="trainNumber"
+                   min="1"
+                   placeholder="Example: 12737"
+                   required>
+
+            <br><br>
+
+            <input type="submit"
+                   value="Check Availability">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Seat Status</h2>
+
+        <p>
+            <b>A</b> = Available
+        </p>
+
+        <p>
+            <b>B</b> = Booked
+        </p>
+
+        <p>
+            Example:
+        </p>
+
+        <p>
+            1 B &nbsp;&nbsp;
+            2 A &nbsp;&nbsp;
+            3 A &nbsp;&nbsp;
+            4 B
+        </p>
+
+        <p>
+            The first available seat is selected
+            during booking.
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>

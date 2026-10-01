@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Waiting List Queue</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆Railway Reservation System</h1>
+
+    <p>Waiting List Management</p>
+
+</header>
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>Waiting List Queue</h2>
+
+        <p>
+            Enter the Train Number to view passengers
+            waiting for a seat.
+        </p>
+
+        <form action="waitingQueue" method="get">
+
+            <label>
+                <b>Train Number:</b>
+            </label>
+
+            <br><br>
+
+            <input type="number"
+                   name="trainNumber"
+                   min="1"
+                   placeholder="Example: 12737"
+                   required>
+
+            <br><br>
+
+            <input type="submit"
+                   value="View Waiting Queue">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>Working</h2>
+
+        <p>
+            Passenger 1 -> Passenger 2 -> Passenger 3
+        </p>
+
+        <p>
+            <b>First passenger in -> First passenger out</b>
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="index.html">
+        Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>

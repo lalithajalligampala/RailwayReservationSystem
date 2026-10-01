@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Train Details - Railway Reservation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .details-form {
+            max-width: 650px;
+            margin: 20px auto;
+            padding: 25px;
+            background: #f4f8fb;
+            border: 1px solid #cbddeb;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .details-button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .instruction-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f4f8fb;
+            border-left: 5px solid #2c3e50;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Railway Reservation System</h1>
+
+        <p>ADSA Course Based Project</p>
+
+    </header>
+
+
+    <div class="container">
+
+        <div class="section">
+
+            <h2>Train Details</h2>
+
+            <p>
+                Enter the source, destination and train number
+                to view complete train details.
+            </p>
+
+
+            <div class="details-form">
+
+                <form action="trainDetails" method="get">
+
+
+                    <!-- Source -->
+
+                    <div class="form-group">
+
+                        <label for="source">
+                            Source Station
+                        </label>
+
+                        <select id="source"
+                                name="source"
+                                required>
+
+                            <option value="">
+                                Select Source
+                            </option>
+
+                            <option value="Bhimavaram">
+                                Bhimavaram
+                            </option>
+
+                            <option value="Vijayawada">
+                                Vijayawada
+                            </option>
+
+                            <option value="Rajahmundry">
+                                Rajahmundry
+                            </option>
+
+                            <option value="Hyderabad">
+                                Hyderabad
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Destination -->
+
+                    <div class="form-group">
+
+                        <label for="destination">
+                            Destination Station
+                        </label>
+
+                        <select id="destination"
+                                name="destination"
+                                required>
+
+                            <option value="">
+                                Select Destination
+                            </option>
+
+                            <option value="Vijayawada">
+                                Vijayawada
+                            </option>
+
+                            <option value="Rajahmundry">
+                                Rajahmundry
+                            </option>
+
+                            <option value="Visakhapatnam">
+                                Visakhapatnam
+                            </option>
+
+                            <option value="Hyderabad">
+                                Hyderabad
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Train Number -->
+
+                    <div class="form-group">
+
+                        <label for="trainNumber">
+                            Train Number
+                        </label>
+
+                        <input type="number"
+                               id="trainNumber"
+                               name="trainNumber"
+                               placeholder="Example: 12737"
+                               required>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <input type="submit"
+                           value="View Train Details"
+                           class="details-button">
+
+                </form>
+
+            </div>
+
+
+            <div class="instruction-box">
+
+                <p>
+                    <b>How to use:</b>
+                </p>
+
+                <p>
+                    1. Select the source station.
+                </p>
+
+                <p>
+                    2. Select the destination station.
+                </p>
+
+                <p>
+                    3. Enter the train number.
+                </p>
+
+                <p>
+                    4. Click "View Train Details".
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a href="index.html" class="back-link">
+            Back to Home
+        </a>
+
+    </div>
+
+
+    <footer>
+
+        Railway Reservation System |
+        ADSA Course Based Project
+
+    </footer>
+
+</body>
+
+</html>

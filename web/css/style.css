@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* ================= PAGE LAYOUT ================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* ================= SECTION ================= */
+
+.section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    color: #1f4e79;
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+/* ================= HOME MENU ================= */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.menu-card {
+    display: block;
+    background-color: #eef5fb;
+    border: 1px solid #c8dceb;
+    border-radius: 8px;
+    padding: 18px;
+    text-decoration: none;
+    color: #1f4e79;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-card:hover {
+    background-color: #dcecf8;
+    transform: translateY(-2px);
+}
+
+/* ================= ADSA / ALGORITHM ================= */
+
+.algorithm {
+    background-color: #f8f8f8;
+    border-left: 5px solid #1f4e79;
+    padding: 12px 15px;
+    margin: 10px 0;
+}
+
+.algorithm strong {
+    color: #1f4e79;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+/* ================= LINKS ================= */
+
+a {
+    color: #1f4e79;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background-color: #1f4e79;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: #163a5c;
+}
+
+/* ================================================= */
+/*              TRAIN SEARCH RESULTS                 */
+/* ================================================= */
+
+.train-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.train-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    table-layout: auto;
+}
+
+.train-table th {
+    background-color: #1f4e79;
+    color: white;
+    padding: 10px 7px;
+    text-align: center;
+    font-size: 14px;
+    white-space: normal;
+}
+
+.train-table td {
+    padding: 10px 7px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.train-table tr:hover {
+    background-color: #f1f7fc;
+}
+
+/* ================= ACTION COLUMN ================= */
+
+.action-cell {
+    min-width: 90px;
+}
+
+.table-button {
+    display: block;
+    width: 75px;
+    margin: 4px auto;
+    padding: 6px 4px;
+    background-color: #1f4e79;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.table-button:hover {
+    background-color: #163a5c;
+}
+
+/* ================= ADMIN FORMS ================= */
+
+form {
+    max-width: 600px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #1f4e79;
+    outline: none;
+    box-shadow: 0 0 4px rgba(31, 78, 121, 0.3);
+}
+
+form input[type="submit"] {
+    width: auto;
+    min-width: 120px;
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #163a5c;
+}
+
+/* ================================================= */
+/*                  RESPONSIVE                       */
+/* ================================================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 94%;
+        padding-bottom: 25px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .train-table th,
+    .train-table td {
+        padding: 8px 5px;
+        font-size: 13px;
+    }
+
+    .table-button {
+        width: 65px;
+        font-size: 11px;
+    }
+
+    .back-link {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

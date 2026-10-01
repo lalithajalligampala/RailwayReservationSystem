@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Search Trains</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚆 Railway Reservation System</h1>
+
+    <p>Train Search & Sorting</p>
+
+</header>
+
+
+<div class="container">
+
+
+    <div class="section">
+
+        <h2>🔍 Search Trains</h2>
+
+        <form action="searchTrain" method="get">
+
+            <label>
+                <b>Source:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="source"
+                   placeholder="Example: Bhimavaram"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Destination:</b>
+            </label>
+
+            <br>
+
+            <input type="text"
+                   name="destination"
+                   placeholder="Example: Vijayawada"
+                   required>
+
+            <br><br>
+
+
+            <label>
+                <b>Sort Results:</b>
+            </label>
+
+            <br>
+
+            <select name="sort">
+
+                <option value="none">
+                    No Sorting
+                </option>
+
+                <option value="fare">
+                    Fare - Low to High
+                </option>
+
+                <option value="seats">
+                    Available Seats - High to Low
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <input type="submit"
+                   value="Search Trains">
+
+        </form>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2>📌 Example</h2>
+
+        <p>
+            <b>Source:</b> Bhimavaram
+        </p>
+
+        <p>
+            <b>Destination:</b> Vijayawada
+        </p>
+
+        <p>
+            You can sort the results by:
+        </p>
+
+        <ul>
+
+            <li>Fare - Low to High</li>
+
+            <li>Available Seats - High to Low</li>
+
+        </ul>
+
+    </div>
+
+
+    <a class="back-link" href="index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<footer>
+
+    Railway Reservation System |
+    Online Train Booking and Reservation
+
+</footer>
+
+</body>
+
+</html>
