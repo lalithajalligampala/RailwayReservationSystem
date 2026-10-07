@@ -25,7 +25,9 @@ public class AdminLoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         if (ADMIN_USERNAME.equals(username)
-                && ADMIN_PASSWORD.equals(password)) {
+        && password != null
+        && ADMIN_PASSWORD != null
+        && ADMIN_PASSWORD.equals(password)) {
 
             HttpSession session = request.getSession();
 
